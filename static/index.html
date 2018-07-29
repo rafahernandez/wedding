@@ -6,7 +6,7 @@
     <meta name="keywords" content="Jocelyn,Kaloian,Wedding">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>J &amp; K Wedding</title>
+    <title>👰 A &amp; R 🤵</title>
 
     <link rel="shortcut icon" href="img/favicon.ico?v=1">
 
@@ -25,7 +25,26 @@
     <![endif]-->
 
     <div id="content"></div>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+    var config = {
+            apiKey: "AIzaSyBBcmI3TWfW15I7XkzoniymtMbheIAsEqA",
+            authDomain: "aurora-y-rafael.firebaseapp.com",
+            databaseURL: "https://aurora-y-rafael.firebaseio.com",
+            projectId: "aurora-y-rafael",
+            storageBucket: "aurora-y-rafael.appspot.com",
+            messagingSenderId: "761714979850"
+        };
+        firebase.initializeApp(config);
 
+        function callbackFn(errorMsg, response){
+                if (errorMsg) {
+                    console.log('Error', errorMsg);
+                } else {
+                    console.log('OK', response);
+                }
+            }
+</script>
     <script src="js/bundle.js"></script>
 
     <div class="credits">

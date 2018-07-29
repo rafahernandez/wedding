@@ -24,104 +24,61 @@ const websiteContent = (
 
     <Sticky enabled={true}>
       <Menu id="menu"
-        items={[{ label: 'THE BRIDE & GROOM', href: 'brideandgroom' },
-                { label: 'THE WEDDING', href: 'wedding' },
+        items={[
+                // { label: 'THE BRIDE & GROOM', href: 'brideandgroom' },
+                { label: 'LA BODA', href: 'wedding' },
                 { label: 'RSVP', href: 'rsvp' },
-                { label: 'LOGISTICS', href: 'logistics' },
-                { label: 'THINGS TO DO', href: 'thingstodo' },
-                { label: 'GIFTS', href: 'gifts' }]}>
+                { label: 'LOGÍSTICA', href: 'logistics' },
+                { label: 'QUE HACER', href: 'thingstodo' },
+                { label: 'REGALOS', href: 'gifts' }]}>
       </Menu>
     </Sticky>
-
-    <TopicContainer id="brideandgroom" name="brideandgroom" title="The Bride and Groom">
-      <div className="container">
-        <div className="row">
-          <div className="one-half column">
-            <p>
-              <a href="img/jocelyn-baby.jpg"><img className="thumbnail" src="img/jocelyn-baby.jpg" alt="Jocelyn" /></a>
-              Jocelyn is a sweet and giving girl who always sees the beauty in people. As exciting as it was to be rasied in New York, she made
-              it her mission to live and explore as many beautiful cities as she could. Thanks to her beloved sister Wendy it was possible to
-              jump from the neon nights of Miami, through the diverse city of London, to then learn the leisurely ways of Italy. While Jocelyn
-              was exploring and realizing her passion in life, she realized she needed to find her way back to the city she knew her dream job
-              was waiting for her in fashion.
-            </p>
-          </div>
-
-          <div className="one-half column">
-            <p>
-              <a href="img/kal-baby.jpg"><img className="thumbnail" src="img/kal-baby.jpg" alt="Kal" /></a>
-              Kal is a burly and impatient Eastern European. He moved from his homeland Bulgaria to the lovely city of Toronto at the young and
-              tender age of 22. Kal then found himself in the IT mecca of Seattle and realized after 9 years of the beautiful mountain backdrop
-              and serene lakes that he needs to escape to the center of the universe, New York.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
-      <p>
-        <img className="large-image" src="img/proposal.jpg" alt="Kal Proposing To Jocelyn" />
-      </p>
-
-      <h2>OUR STORY</h2>
-      <p>
-        Being children of the modern day and age, our story began with venturing onto OK Cupid. As hesitant as one of us was to engage
-        herself with a complete stranger online (while the other happily explored with enthusiasm) on our first date it soon became
-        apparent that we met the natural occurrences when 2 people meet and all feelings of the unknown disappeared because at that moment
-        right in front of me I was meeting my best friend. As the cliche tale goes, the rest is history.
-      </p>
-    </TopicContainer>
 
     <TopicContainer id="wedding" title="Wedding">
       <div className="container">
         <div className="one-half column">
-          <h2>CEREMONY</h2>
-          <p>16:45 @ Sveti Marak Church Courtyard</p>
+          <h2>CEREMONIA</h2>
+          <p>TBD @ Parroquia Santa Maria de la Asuncion (Ex convento de San Francisco)</p>
           <p>
             <a href="img/svetimarak.jpg"><img className="location-image" src="img/svetimarak.jpg" alt="Sveti Marak (St Mark's)" /></a>
           </p>
           <p style={{textAlign: "center"}}>
-            <a href="https://goo.gl/maps/7oeGdedkbM72">Google Maps</a> | <a href="img/city-hvar-map.jpg">Tourist Map</a>
+            <a href="https://goo.gl/maps/LNEiiYkH6c42">Google Maps</a> | <a href="img/city-hvar-map.jpg">Tourist Map</a>
           </p>
-          <p>Located to the left of the Loggia and Clock Tower (the Town Hall) and behind the market and row of shops at the back of the
-             harbour. Follow signs to the Hotel Park and continue past the café until you arrive at the Church. Also have a look at the
-             tourist map above.
+          <p>Se encuentra a 500 mts del zócalo de Atlixco aunque el camino es sólo de subida y esta pesada, tenemos permiso para estacionarnos en la explanada
+          y hay suficiente espacio para todos.
           </p>
         </div>
         <div className="one-half column">
-          <h2>RECEPTION</h2>
-          <p>18:15 @ Bonj les Bains Beach Club</p>
+          <h2>RECEPCIÓN</h2>
+          <p>19:00 @ Las palomas Atlixco</p>
           <p>
-            <a href="img/bonjlesbainsbeachclub.jpg"><img className="location-image" src="img/bonjlesbainsbeachclub.jpg" alt="Bonj Les Bains Beach Club" /></a>
+            <a href="img/bonjlesbainsbeachclub.jpg"><img className="location-image" src="img/bonjlesbainsbeachclub.jpg" alt="Las palomas atlixco" /></a>
           </p>
           <p style={{textAlign: "center"}}>
-            <a href="https://goo.gl/maps/MGBa94iBaA42">Google Maps</a> | <a href="img/city-hvar-map.jpg">Tourist Map</a>
+            <a href="https://goo.gl/maps/wCh9CVCXHoN2">Google Maps</a> | <a href="img/city-hvar-map.jpg">Tourist Map</a>
           </p>
-          <p>Located a 10 minute walk from Sveti Marak and there will be someone to lead the way. Ladies, please bear in mind that the walk
-             is over a cobbled path, which would not be comfortable if wearing heels, so you might consider bringing a pair of flats for the
-             trek.
+          <p>A 2 km del zócalo en direccion al Hospital, no cuenta con estacionamiento, pero tendremos servicio de valet parking.
           </p>
         </div>
       </div>
 
       <hr />
 
-      <h2>ON THE WEDDING DAY</h2>
-      <p>The ceremony will start at 17:00 at the Sveti Marak church courtyard. Please arrive 10 to 15 minutes before so everybody can get
-         seated and so we can start on time.
+      <h2>EL DIA DE LA BODA</h2>
+      <p>La ceremonia iniciará a las XX:00 en la Parroquia de Santa Maria Acapetlahuacan, por favor lleguen de 10 a 15 minutos antes para iniciar a tiempo.
       </p>
-      <p>After the ceremony we will raise a glass of champagne and someone will lead you to the reception where drinks and appetizers will
-         be served.
+      <p>Después de la ceremonia no veremos en la explanada de la iglesia para tomar los coches e irnos siguiendo hasta el jardín. Si tienes asientos desocupados
+      nos ayudarías al ofrecerlos a los otros invitados que no tengan como moverse.
       </p>
       <p>
-        Wedding attire is summer formal. Gentlemen, please wear a light suit with which you will be comfortable with the heat. And ladies,
-        you look pretty as you are, in your formal summer dresses :)
+      El estilo de la boda es mexicano formal. Para los caballeros una guayabera y pantalón de vestir bastará. Para las damas un vestido con detalles mexicanos es una buena opción.
+      El clima en Atlixco para para el inicio de la boda será de unos 20°C pero se irá enfriando como avance la noche.
       </p>
 
       <hr />
 
-      <h2>DAY BEFORE THE WEDDING (30 August)</h2>
+      <h2>EL DÍA ANTES DE LA BODA</h2>
       <p>Welcome cocktails will be held on the terrace of <a href="https://goo.gl/Vd3ZJd">Restaurant Park Hvar</a> from 18:30 to 23:30.
       </p>
       <p>
@@ -130,7 +87,7 @@ const websiteContent = (
 
       <hr />
 
-      <h2>DAY AFTER THE WEDDING (1 September)</h2>
+      <h2>EL DÍA DESPUES DE LA BODA</h2>
       <p>Farewell brunch will be held at 11:00 at the&nbsp;
          <a href="http://www.suncanihvar.com/amfora-hvar-grand-beach-resort/maestral-balkan-grill.html">Maestral Restaurant</a>. It is located
          just a few meters on the path that takes you to the <a href="https://goo.gl/r9TFHt">wedding venue</a>.
@@ -154,7 +111,7 @@ const websiteContent = (
 
       <hr />
 
-      <h2>GETTING TO CROATIA</h2>
+      <h2>COMO LLEGAR A ATLIXCO</h2>
       <p>Being a popular summer tourist destination, getting to Croatia is relatively easy. The closest major city to Hvar is&nbsp;
          <a href="https://goo.gl/maps/a8JeWAEuugN2">Split</a> and it is fairly well connected by pretty much all European airlines
          and some low-cost carriers, such as&nbsp;
@@ -249,7 +206,7 @@ const websiteContent = (
 
       <hr />
 
-      <h2>ACCOMMODATIONS</h2>
+      <h2>HOSPEDAJE</h2>
       <p>Once on the island in Hvar Town there are various accommodation options ranging from fancy hotels to renting an apartment
          on <a href="https://goo.gl/uHTDYn">AirBnB</a>. The wedding will be in the Amfora Resort so any accommodation within walking
          distance from there should be fine.
@@ -266,7 +223,7 @@ const websiteContent = (
       </p>
     </TopicContainer>
 
-    <TopicContainer id="thingstodo" title="Things to do in Croatia">
+    <TopicContainer id="thingstodo" title="Cosas que hacer en Atlixco">
       <p>Since all of you are coming from different parts of the world, we presume that you would like to make a full vacation out of your
          trip to Croatia. In this section we are listing some of the main tourist places to visit and have suggestions for routes to take.
          As a disclaimer, some of these suggestions are compiled from various online sources such as Lonely Planet and not locations we

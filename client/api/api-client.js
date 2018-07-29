@@ -43,14 +43,16 @@ class APIClient {
             }
         })
             .catch(function (err) {
-                callbackFn('Boo, looks like your internizzle is acting up, but there might also be a bug :( Call us?');
+                //TODO something for callback
+                callback('Boo, looks like your internizzle is acting up, but there might also be a bug :( Call us?');
             })
             .then(function (res) {
                 if (!res.ok) {
-                    callbackFn('Boo, something went wrong, most likely a bug :( Call us?');
+                    callback('Boo, something went wrong, most likely a bug :( Call us?');
                 }
                 else {
-                    callbackFn(undefined, res);
+                    console.log('OJ',res);
+                    callback(undefined, res);
                 }
             });
     }

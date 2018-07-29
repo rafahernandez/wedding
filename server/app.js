@@ -21,7 +21,8 @@ mongoose.Promise = global.Promise;
 const webAppPort = process.env.PORT || 8000;
 
 // MongoDB connection string
-const mongodbUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/wedding';
+// const mongodbUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/wedding';
+const mongodbUri = 'mongodb://joraheta:Pc-121787@ds121871.mlab.com:21871/wedding';
 
 // Logging level
 winston.level = process.env.LOG_LEVEL || 'debug';
