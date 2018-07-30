@@ -35,23 +35,24 @@ class RSVPForm extends React.Component {
 
         return (
             <div id={this.props.id} className="wizard-form">
-                <p>Por favor completa los datos para dejarnos saber si nos acompañaran en Atlixco.
+                <p>Para darte el trato que nos gustaría te pedimos confirmes tu asistencia antes del 15 de diciembre de 2018. 
+                Puedes hacerlo aquí, vía telefónica o confirmar al recibir la llamada de cualquiera de estos números 
                 </p>
                 <br />
 
                 <p>Los campos marcados con * son obligatorios.</p>
                 <br />
 
-                {this.renderTextInput('name', 'Name*:', guestInfo)}
-                {this.renderTextInput('email', 'Email*:', guestInfo)}
+                {this.renderTextInput('name', 'Nombre*:', guestInfo)}
+                {this.renderTextInput('telefono', 'Telefono:', guestInfo)}
                 <br />
 
                 {this.renderRadioInput(
                     'attendance',
                     'Attendance*:',
                     [
-                        { label: 'SI VOY A ATENDER', value: 'yes' },
-                        { label: 'LO SIENTO NO PODRE ACOMPAÑARLOS', value: 'no' }
+                        { label: 'SI, VOY A ATENDER', value: 'yes' },
+                        { label: 'NO, LO SIENTO NO PODRE ACOMPAÑARLOS', value: 'no' }
                     ],
                     guestInfo)
                 }
@@ -74,15 +75,6 @@ class RSVPForm extends React.Component {
                             '¿Alguna otra restricción?',
                             guestInfo)}
                         <br />
-
-                        {this.renderRadioInput(
-                            'hangoverBrunch',
-                            '¿Nos acompañaran a la presentación de César (El día después de la boda)*?',
-                            [
-                                { label: 'SI', value: 'yes' },
-                                { label: 'NO', value: 'no' }
-                            ],
-                            guestInfo)}
                         <br />
 
                     </div>
@@ -98,7 +90,7 @@ class RSVPForm extends React.Component {
                 }
                 <br />
 
-                <button onClick={this.submitRSVP.bind(this)}>Submit</button>
+                <button onClick={this.submitRSVP.bind(this)}>Enviar</button>
             </div>
         );
     }
@@ -111,9 +103,6 @@ class RSVPForm extends React.Component {
         function validateGuestDetail(info) {
             if (!info.meal)
                 return "Por favor elige las restricciones alimentarias.";
-            if (!info.hangoverBrunch)
-                return 'Por favor dejános saber si atenderas a la presentación de César';
-
             return null;
         }
 
@@ -128,7 +117,7 @@ class RSVPForm extends React.Component {
         if (guestInfo.attendance === 'no')
             return null;
 
-        if (!guestInfo.email || guestInfo.email.trim().empty || !isEmail(guestInfo.email))
+        if (!isEmail(guestInfo.email))
             return 'Tu email no es correcto';
 
         const guestValidation = validateGuestDetail(guestInfo);

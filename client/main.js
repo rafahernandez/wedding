@@ -34,31 +34,34 @@ const websiteContent = (
       </Menu>
     </Sticky>
 
-    <TopicContainer id="wedding" title="Wedding">
+    <TopicContainer id="wedding" title="La BODA">
       <div className="container">
         <div className="one-half column">
           <h2>CEREMONIA</h2>
-          <p>TBD @ Parroquia Santa Maria de la Asuncion (Ex convento de San Francisco)</p>
+          <p>XX:X hrs, en la Parroquia Santa Maria de la Asuncion Acapetlahuaca (Ex convento Franciscano).</p>
           <p>
-            <a href="img/svetimarak.jpg"><img className="location-image" src="img/svetimarak.jpg" alt="Sveti Marak (St Mark's)" /></a>
+            <a href="img/exconvento.jpg"><img className="location-image" src="img/exconvento.jpg" alt="Ex convento Fransiscano" /></a>
           </p>
           <p style={{textAlign: "center"}}>
-            <a href="https://goo.gl/maps/LNEiiYkH6c42">Google Maps</a> | <a href="img/city-hvar-map.jpg">Tourist Map</a>
+            <a href="https://goo.gl/maps/LNEiiYkH6c42">Ver en mapa</a>
           </p>
-          <p>Se encuentra a 500 mts del zócalo de Atlixco aunque el camino es sólo de subida y esta pesada, tenemos permiso para estacionarnos en la explanada
-          y hay suficiente espacio para todos.
+          <p>El lugar para la ceremonia religiosa se encuentra muy cerca del zócalo de Atlixco, pero está ubicada en un lugar elevado, 
+          no hay de qué preocuparse, los automóviles entran hasta la iglesia y tenemos disponible la explanada para estacionar los coches, 
+          así que estarás en la puerta de la misma. Sólo te pedimos respetar la orientación de los autos para tener espacio para todos.
           </p>
         </div>
         <div className="one-half column">
           <h2>RECEPCIÓN</h2>
-          <p>19:00 @ Las palomas Atlixco</p>
+          <p>19:00 en Las palomas Atlixco</p>
           <p>
-            <a href="img/bonjlesbainsbeachclub.jpg"><img className="location-image" src="img/bonjlesbainsbeachclub.jpg" alt="Las palomas atlixco" /></a>
+            <a href="img/palomas.jpg"><img className="location-image" src="img/palomas.jpg" alt="Las palomas atlixco" /></a>
           </p>
           <p style={{textAlign: "center"}}>
-            <a href="https://goo.gl/maps/wCh9CVCXHoN2">Google Maps</a> | <a href="img/city-hvar-map.jpg">Tourist Map</a>
+            <a href="https://goo.gl/maps/wCh9CVCXHoN2">Ver en mapa</a>
           </p>
-          <p>A 2 km del zócalo en direccion al Hospital, no cuenta con estacionamiento, pero tendremos servicio de valet parking.
+          <p>Después de la ceremonia religiosa los esperamos en el Jardín Campestre “Las Palomas”, ubicado en Calle Felipe Carrillo 
+          Puerto #702, Colonia Ricardo Flores Magón, Atlixco, Puebla. Para la comodidad de todos, habrá servicio de vigilancia y valet 
+          parking, ven preparado para bailar, cantar y festejar con nosotros.
           </p>
         </div>
       </div>
@@ -66,34 +69,22 @@ const websiteContent = (
       <hr />
 
       <h2>EL DIA DE LA BODA</h2>
-      <p>La ceremonia iniciará a las XX:00 en la Parroquia de Santa Maria Acapetlahuacan, por favor lleguen de 10 a 15 minutos antes para iniciar a tiempo.
+      <p>Te pedimos salir de tu hotel con tiempo suficiente, ya que como te comentamos, la iglesia está en el centro de Atlixco y 
+      a veces el tráfico es un poco lento, en el directorio que está adjunto a la invitación (y disponible aquí) te pusimos opciones 
+      que creemos necesarias para cualquier contratiempo, siéntete libre de usarlas haciendo referencia al evento.
       </p>
-      <p>Después de la ceremonia no veremos en la explanada de la iglesia para tomar los coches e irnos siguiendo hasta el jardín. Si tienes asientos desocupados
-      nos ayudarías al ofrecerlos a los otros invitados que no tengan como moverse.
+      <p>Después de la ceremonia religiosa te agradeceríamos que ofrecieras los espacios disponibles en tu coche para 
+      los invitados que no tengan transporte.
       </p>
-      <p>
-      El estilo de la boda es mexicano formal. Para los caballeros una guayabera y pantalón de vestir bastará. Para las damas un vestido con detalles mexicanos es una buena opción.
-      El clima en Atlixco para para el inicio de la boda será de unos 20°C pero se irá enfriando como avance la noche.
-      </p>
-
       <hr />
-
       <h2>EL DÍA ANTES DE LA BODA</h2>
-      <p>Welcome cocktails will be held on the terrace of <a href="https://goo.gl/Vd3ZJd">Restaurant Park Hvar</a> from 18:30 to 23:30.
+      <p> Nosotros ya estaremos en Atlixco para el viernes por la noche, así que estaremos disponibles en nuestros celulares.
       </p>
-      <p>
-         Cocktail night attire is dressy-casual.
-      </p>
-
       <hr />
-
-      <h2>EL DÍA DESPUES DE LA BODA</h2>
-      <p>Farewell brunch will be held at 11:00 at the&nbsp;
-         <a href="http://www.suncanihvar.com/amfora-hvar-grand-beach-resort/maestral-balkan-grill.html">Maestral Restaurant</a>. It is located
-         just a few meters on the path that takes you to the <a href="https://goo.gl/r9TFHt">wedding venue</a>.
-      </p>
-      <p>
-         Brunch attire is wear anything you want :)
+      <h2>CÓDIGO DE VESTUARIO</h2>
+      <p> Cómo te habrás dado cuenta, el estilo de la boda es Mexicano, pero al ser un evento de noche te solicitamos vestir FORMAL, 
+      agregando un toque Mexicano, en el caso de las mujeres una prenda bordada, un rebozo o un accesorio podrán dar el toque mexicano. 
+      En el caso de los varones, les damos la opción de asistir de Guayabera, preferentemente de manga larga y con pantalón de vestir.
       </p>
     </TopicContainer>
 
@@ -102,110 +93,21 @@ const websiteContent = (
       </RSVPForm>
     </TopicContainer>
 
-    <TopicContainer id="logistics" title="Logistics">
-      <p>We understand that going to a different country to attend a wedding can be a daunting experience. That's why in this section
-         we have tried to compile information and links to help make your travel and hotel booking as simple as possible and to give
-         you ideas for how to make a complete vacation out of your trip. Please read through it and if you feel you need any additional
-         information or help, do not hesitate to contact us.
+    <TopicContainer id="logistics" title="Logística">
+      <p>El clima en Atlixco es templado, tendiendo a caluroso, por lo que el día de la boda esperamos alrededor de 25° durante el día,  
+      y al caer la tarde descenderá un poco la temperatura, por lo tanto recomendamos tener a la mano algo para cubrirse.
       </p>
-
       <hr />
 
       <h2>COMO LLEGAR A ATLIXCO</h2>
-      <p>Being a popular summer tourist destination, getting to Croatia is relatively easy. The closest major city to Hvar is&nbsp;
-         <a href="https://goo.gl/maps/a8JeWAEuugN2">Split</a> and it is fairly well connected by pretty much all European airlines
-         and some low-cost carriers, such as&nbsp;
-         <a href="https://wizzair.com/#/booking/select-flight/LTN/SPU/2017-08-22/2017-09-02/1/0/0">WizzAir</a> and&nbsp;
-         <a href="https://www.eurowings.com/en.html">Eurowings</a>.
+      <p>Se ubica a 25 km de la ciudad de Puebla, capital del Estado y cuenta con dos importantes vías de acceso: la Carretera Federal 190 y 
+      la moderna Autopista Vía Atlixcáyotl ($40, te ahorraras como 15-20 minutos).
       </p>
-      <p>The second closest major airport is in <a href="https://goo.gl/maps/goc5oZWa3wC2">Dubrovnik</a>. It is about 5 hours away
-         from Hvar via a ferry, which is kind of far, but if you are planning on doing some touring before or after the wedding it is
-         a great location to visit. Have a look at the 'Things to do section' further down for more information on that.
+      <p>No hay autobuses directos, tienes que llegar a la CAPU o alguna otra terminal de ORO/ERCO (<a href="https://goo.gl/maps/aSEKkc6bA3x">Col. La Paz</a> 
+      | <a href="https://goo.gl/maps/xkTEBrfTJwH2">Caseta Atlixcayotl</a>), el costo de es aprox. $35 por persona, el tiempo de traslado es de casi 
+      una hora  de terminal a terminal desde la CAPU. (En Atlixco la terminal esta a 600 metros del zocalo).
       </p>
-      <p>As of the time of writing there are no&nbsp;
-         <a href="https://www.kayak.com/flights/NYC-SPU/2017-08-25/2017-09-02/2adults">direct flights</a>&nbsp;
-         from the US or Canada to Croatia, so guests coming from there will have to do at least one connection in a major European hub
-         such as Frankfurt, Zurich or Amsterdam.
-      </p>
-
-      <hr />
-
-      <p>
-        <img className="large-image" src="img/hvar.jpg" alt="Hvar town" />
-      </p>
-
-      <h2>FERRY TO THE ISLAND OF HVAR</h2>
-      <p>The Split airport is located about 25km (16mi) from the harbour from where the ferries leave for Hvar. According to the bus
-         company's <a href="http://www.buscroatia.com/airport-split/">website</a> a taxi should cost about 35 EUR/40 USD for 1-3 people
-         while the bus costs around 4 EUR/5 USD per person. Unless you are in a real hurry to catch a ferry, we recommend taking the
-         bus. They are big white coaches just a few steps to the left after you exit though the main airport entrance and we found them
-         to be very comfortable and convenient. They accept both cash and credit card for payment.
-      </p>
-
-      <div id="gmap">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1QdPbr1DgM7Cgiw2PwAbLgpINiSI"></iframe>
-      </div>
-
-      <p>The bus or taxi will drop you off at the Split bus station, which is on the water. The bus drop-off is only 5 minutes walk
-         from the ferry ticket kiosk. There you can buy tickets or ask for the terminal from which your ferry leaves if it is unclear
-         from the large electronic panel infront of it, listing the departures. The ferry ticket kiosk looks like this:
-      </p>
-      <p>
-         <img className="large-image" src="img/split-ferry-ticket-kiosk.jpg" alt="Ferry tickets kiosk" />
-      </p>
-
-      <p>Once you are at the seaport and looking for transportation to the island, please note that there are two landing spots on the
-         island - Hvar Town and the Old Town (Stari Grad). The wedding will be in Hvar Town, which is in the south-west end of the island,
-         not in the Old Town, which is on the nortern end. Please make sure you are boarding the right ferry, but even if you make a
-         mistake, stay calm because there is a very convenient bus between the two. As a rule, the car ferries go to Old Town (Stari Grad)
-         and take about 2 hours to travel and the fast passenger ferries (catamaran) go directly to Hvar Town and take 1 hour.
-      </p>
-
-      <div id="gmap">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1H0mc9QKj_OwW1TZCWtQc_tb3s9k"></iframe>
-      </div>
-
-      <p>There are two ferry companies which serve the route from Split to Hvar - Jadrolinija and Kapetan Luka. Below we have information
-         for each of them.
-      </p>
-
-      <h3><a href="http://www.jadrolinija.hr/en/ferry-croatia">Jadrolinija</a></h3>
-      <p>This is a high-speed catamaran service from Split to Hvar Town which takes about 65 min. This is the fastest option and costs
-         around 10 EUR/11 USD per person. If you have a car, this site also contains the schedule and pricing for the ferries, which
-         transport cars to the island.
-      </p>
-      <br />
-
-      <h3><a href="http://www.krilo.hr/en/index.html">Kapetan Luka</a></h3>
-      <p>This is the regular ferry service which takes about 2.5 hours and should cost around 5-10 EUR/6-11 USD per person.
-      </p>
-      <br />
-
-      <h3><a href="https://www.atlantis-marine.net/en/croatia-boat-transfers">Chartered Speed Boat</a></h3>
-      <p>If you are coming as a group or feel like a one percenter, this site has information for inclusive transportation packages with
-         pickup from the airport. The sailing part of the journey takes between 45 min to 1 hour, which is similar to the catamaran service,
-         but is a little bit more convenient because it also includes a pickup from the airport. If you choose this option, there is a 5%
-         discount using <SecretTooltip fnTooltip={() => { return 'adriaticweddings'; }}>this code</SecretTooltip> (please click on the
-         'this' in order to show it).
-      </p>
-
-      <hr />
-
-      <h2>DRIVING</h2>
-      <p>For those renting a car or driving to Croatia, we found the driving conditions on the island to be good and there is a
-         parking spot right in the center of the town for 1 EUR/hour or 12 EUR/day.
-      </p>
-      <p>
-         Please note that unless you are coming by car to the island of Hvar, there should not be a need for you to rent one. There are
-         many organized boat trips to discover the surrounding Dalmatian islands and cabrio cars can be rented daily at a fairly decent
-         price from Hvar itself and the paperwork is not that much. For example we rented this funny car for about 60 USD for a day trip:
-      </p>
-      <p>
-         <img className="large-image" src="img/hvar-rental-car.jpg" alt="Day car rental" />
-      </p>
-
-      <hr />
-
+     
       <h2>HOSPEDAJE</h2>
       <p>Once on the island in Hvar Town there are various accommodation options ranging from fancy hotels to renting an apartment
          on <a href="https://goo.gl/uHTDYn">AirBnB</a>. The wedding will be in the Amfora Resort so any accommodation within walking
@@ -224,57 +126,73 @@ const websiteContent = (
     </TopicContainer>
 
     <TopicContainer id="thingstodo" title="Cosas que hacer en Atlixco">
-      <p>Since all of you are coming from different parts of the world, we presume that you would like to make a full vacation out of your
-         trip to Croatia. In this section we are listing some of the main tourist places to visit and have suggestions for routes to take.
-         As a disclaimer, some of these suggestions are compiled from various online sources such as Lonely Planet and not locations we
-         have actually visited, but trust us - they are awesome :)
+      <h2><a href="https://www.mexicodesconocido.com.mx/escapadas/atlixco.html">ATLIXCO</a></h2>
+      <p>En las faldas del Popocatépetl, en el estado de Puebla, se encuentra el pueblo mágico de Atlixco que, rodeado de monumentos 
+      históricos y vegetación tiene todo para cautivar a cualquiera. Te invitamos a que explores las calles de esta joya Poblana.
       </p>
       <br />
-
-      <h2><a href="https://www.lonelyplanet.com/croatia/dubrovnik">DUBROVNIK</a></h2>
-      <p>
-        <img className="large-image" src="img/dubrovnik.jpg" alt="Dubrovnik old city" />
-      </p>
-      <p>Located in the very south of the country, Dubrovnik was once called the "Pearl of the Adriatic" for its architecture and importance
-         in trade. We won't pretend that we know much about its history, but it is a place which must be visited and is also a convenient
-         location to fly into and work your way up the coast to Hvar. On top of that, for the 'Game of Thrones' fans, quite a few scenes from
-         this show were filmed in Dubrovnik. See&nbsp;
-         <a href="http://www.telegraph.co.uk/travel/maps-and-graphics/game-of-thrones-filming-locations-guide/">this article</a> for more
-         information.
-      </p>
-      <br />
-
-      <h2><a href="https://www.lonelyplanet.com/croatia/plitvice-lakes-national-park/attractions/plitvice-lakes-national-park/a/poi-sig/1019024/1318903">PLITVICE LAKES</a></h2>
-      <p>
-        <img className="large-image" src="img/plitvice-lakes.jpg" alt="Plitvice lakes" />
-      </p>
-      <p>This is a beautiful national park covered with heavy forests and waterfalls. It is in the northern half of the country and is about 2 hours
-         drive from Zagreb, the capital of Croatia and 4-5 hours from Split. If you find good flights to Zagreb, Plitvice Lakes can serve as a good
-         midway destination to visit while making you way to the south of the country.
-      </p>
-      <br />
-
-      <h2><a href="https://www.lonelyplanet.com/croatia/dalmatia/hvar-island">HVAR AND THE DALMATIAN ISLANDS</a></h2>
-      <p>
-        <img className="large-image" src="img/mljet.jpg" alt="Mljet" />
-      </p>
-      <p>The Dalmatian islands (one of which is Hvar) offer amazing scenery, nice beaches and sailing opportunities. Island hopping, swimming and
-         sunbathing is great way to spend a few days or even a week. Of these islands, Hvar is deemed as the 'party island' while&nbsp;
-         <a href="https://www.lonelyplanet.com/croatia/dalmatia/mljet-island">Mljet</a> is the most scenic and tranquil. It is located between Hvar
-         and Dubrovnik.
-      </p>
+      <ul>
+        <li>
+          Visita el <b>Palacio Municipal</b> de Atlixco, también conocido como la Villa de Carrión. Fue inaugurado en 1908 después 
+          de siglos de construcción. Aquí se encuentran los murales de Juan Manuel Martínez Caltenco, los cuales cuentan la historia 
+          de la fundación de éste poblado.
+        </li>
+        <li>
+          Ve al <b>kiosco de dos pisos</b> que se encuentra en el zócalo, a un costado de la Parroquia de Santa Marta de la Natividad, 
+          ahí podrás tomar un café mientras disfrutas de la vista.
+        </li>
+        <li>
+          Recorre el <b>Ex Convento del Carmen</b>, una de las construcciones más antiguas de Atlixco. Alguna vez éste fue habitado por las 
+          Carmelitas Descalzas, hoy en día en este espacio se encuentran dos museos: el Museo de las Culturas del Valle y el Museo de Santa Clara.
+        </li>
+        <li>
+          El <b>Antiguo Hospital de San Juan de Dios</b>, originalmente fundado por una orden de curas juaninos. Hoy, en su claustro está la Pinoteca, 
+          lugar donde se reguardan las obras de San Juan de Dios creadas por los artistas virreinales Luis Berrueco y Pablo Talavera.
+        </li>
+        <li>
+          La Calle Emblemática de Atlixco, que en realidad se llama <b>Avenida Hidalgo</b>, es uno de los puntos más significativos de este pueblo. La calle 
+          está decorada con casas de colores, balcones con flores y faroles. Una caminata por aquí es algo de lo que no te puedes perder.
+        </li>
+        <li>
+          Sobre la avenida Hidalgo hallarás los <b>Helados Ximitl</b>, donde se experimenta con los sabores que la imaginación y las temporadas permitan.
+          En esta heladería existen sabores como el de chapulín, polvorón sevillano, pinole e incluso chile en nogada.
+        </li>
+        <li>
+          Dentro de la antigua hacienda de cereales está la <b>cervecería 5 de Mayo</b>. Toma un tour por las instalaciones y aprende todo acerca del proceso de 
+          producción de la cerveza, al final podrás tomarte unas de éstas bien frías. $35 por adulto disponible Sábados y Domingos: de 12:00 a 18:00hrs.
+        </li>
+        <li>
+          La cercanía del pueblo al volcán Popocatépetl hace que sus tierras sean extremadamente fértiles. Es por esto que debes visitar los <b>viveros de la 
+          colonia Cabrera</b>, ahí encontrarás flores de todo tipo, las cuales te podrás llevar contigo.
+        </li>
+        <li>
+          Comúnmente las mojigangas son utilizadas en desfiles durante las fiestas, pero si quieres llevarte una a tu hogar, en <b>Casa Amantoli</b>, 
+          una tienda de artesanías en la Calle Emblemática, podrás adquirir la versión miniatura de estas figuras.
+        </li>
+        <li>
+          En el <b>Mercado Benito Juárez</b> hallarás las delicias típicas de Atlixco como cecina,barbacoa, consomé atlixquense y los mixotes de carnero.
+        </li>
+        <li>
+          <b>Plaza del Huey Atlixcayotl</b>,  en esta plaza te encontrarás muy cerca de la capilla de San Miguel, que se encuentra cerrada por 
+          cuestiones de seguridad, sin embargo, a la plaza puedes llegar fácilmente en coche y disfrutar de una hermosa vista.
+        </li>
+      </ul>
     </TopicContainer>
 
-    <TopicContainer id="gifts" title="Gifts">
-      <p>Dear family and friends,</p>
-      <p>We feel honoured that you are all travelling a long way to come and celebrate our special day with us. For this reason we don't
-         want anyone to feel obliged to buy us gifts. Your presence is the biggest gift.
+    <TopicContainer id="gifts" title="Regalos">
+      <p>Querida familia y amigos,</p>
+      <p> Ya hemos encontrado la riqueza más grande en el amor que nos profesamos y en el que ustedes nos brindan.</p>
+      <p> Nos sentimos honrados de que hayan viajado para venir a celebrar nuestro día especial. 
+      No queremos que se sientan obligados a darnos un regalo, su presencia es el mejor regalo.</p>
+      <p>Sin embargo, si desean hacerlo y contribuir a nuestro proyecto de vida, les pedimos sea por medio de 
+      nuestras mesas de sugerencias que hemos colocado en:
       </p>
-      <p>If you do feel that you want to give us a gift please remember that just like you, we will only have a suitcase full of clothes
-        so we won't be able to carry any items back.
+      <p>
+      SEARS   <b>11113379</b><br/>
+      LIVERPOOL 
       </p>
-      <p>Thank you in advance!
-      </p>
+      <p>Esto tomando en cuenta que así como ustedes, viajamos para la boda y nos será un tanto difícil transportar artículos grandes.</p>
+      <p>¡Estamos eternamente agradecidos!</p>
     </TopicContainer>
 
   </div>

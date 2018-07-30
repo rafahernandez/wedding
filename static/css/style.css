@@ -24,7 +24,9 @@ body {
     line-height: 1.4;
     text-align: center;
 }
-
+b{
+    color: #ff00b0;
+}
 a {
     color: #b1bf92;
     text-decoration: none;
@@ -89,19 +91,22 @@ hr {
 }
 
 .titlebar .bride-name {
-    font-family: 'EdwardianScrAltITCTT';
-    font-size: 11em;
+    /* font-family: 'EdwardianScrAltITCTT'; */
+    font-family: 'Pacifico', cursive;
+    font-size: 8em;
     line-height: 100%;
 }
 
 .titlebar .groom-name {
-    font-family: 'FuturaLTBook';
-    font-size: 5em;
+    /* font-family: 'FuturaLTBook'; */
+    font-family: 'Pacifico', cursive;
+    font-size: 8em;
     line-height: 100%;
 }
 
 .titlebar .wedding-date {
-    font-family: 'FuturaLTBook';
+    /* font-family: 'FuturaLTBook'; */
+    font-family: 'Cookie', cursive;
     font-size: 2.5em;
     margin-bottom: 20px;
     margin-top: 15px;
@@ -468,7 +473,7 @@ img.location-image {
     }
 
     .titlebar .bride-name {
-        font-size: 8.8em;
+        font-size: 4em;
     }
 
     .titlebar .groom-name {
@@ -514,11 +519,11 @@ img.location-image {
     }
 
     .titlebar .bride-name {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .titlebar .groom-name {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .titlebar .wedding-date {
