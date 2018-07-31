@@ -28,16 +28,20 @@
 
     <div id="content"></div>
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script> -->
     <script>
     var config = {
             apiKey: "AIzaSyBBcmI3TWfW15I7XkzoniymtMbheIAsEqA",
-            authDomain: "aurora-y-rafael.firebaseapp.com",
+            // authDomain: "aurora-y-rafael.firebaseapp.com",
             databaseURL: "https://aurora-y-rafael.firebaseio.com",
             projectId: "aurora-y-rafael",
             storageBucket: "aurora-y-rafael.appspot.com",
             messagingSenderId: "761714979850"
         };
         firebase.initializeApp(config);
+        var database = firebase.firestore();
+         database.settings({ timestampsInSnapshots: true });
 
         function callbackFn(errorMsg, response){
                 if (errorMsg) {

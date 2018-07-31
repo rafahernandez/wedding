@@ -196,6 +196,18 @@ hr {
     width: 100%;
 }
 
+.wizard-form input[type='number'] {
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 8px 0;
+    padding: 12px 20px;
+    text-align: center;
+    width: 100%;
+}
+
 .wizard-form input[type='radio'] {
     float: left;
     margin: 3px 6px;

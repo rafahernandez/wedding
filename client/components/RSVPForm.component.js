@@ -10,9 +10,6 @@ import APIClient from '../api/api-client';
 import isEmail from 'validator/lib/isEmail';
 import React from 'react';
 
-// For compatibility with older Internet Explorer browsers
-require('es6-object-assign').polyfill();
-
 /**
  * Implements the RSVP form.
  */
@@ -43,36 +40,35 @@ class RSVPForm extends React.Component {
                 <p>Los campos marcados con * son obligatorios.</p>
                 <br />
 
-                {this.renderTextInput('name', 'Nombre*:', guestInfo)}
-                {this.renderTextInput('telefono', 'Telefono:', guestInfo)}
+                {this.renderTextInput('nombre', 'Nombre*:', guestInfo)}
+                {this.renderTextInput('telefono', 'Teléfono:', guestInfo)}
                 <br />
 
                 {this.renderRadioInput(
-                    'attendance',
-                    'Attendance*:',
+                    'asistir',
+                    '¿Asistirás?*:',
                     [
-                        { label: 'SI, VOY A ATENDER', value: 'yes' },
-                        { label: 'NO, LO SIENTO NO PODRE ACOMPAÑARLOS', value: 'no' }
+                        { label: 'SI VOY A ATENDER', value: true },
+                        { label: 'NO PODRÉ ACOMPAÑARLOS', value: false }
                     ],
                     guestInfo)
                 }
                 <br />
 
-                {guestInfo.attendance === 'yes' &&
+                {guestInfo.asistir === 'true'  &&
                     <div>
-                        {this.renderRadioInput(
-                            'meal',
-                            'Restricciones del menu*:',
-                            [
-                                { label: 'NINGUNA', value: 'meat' },
-                                { label: 'SOY VEGETARIANO', value: 'vegetarian' }
-                            ],
+                        {this.renderNumberInput(
+                            'pax',
+                            '¿Cuantas personas te acompañaran?*',
                             guestInfo)}
                         <br />
-
-                        {this.renderTextInput(
-                            'dietaryRestrictions',
-                            '¿Alguna otra restricción?',
+                        {this.renderRadioInput(
+                            'menu_especial',
+                            '¿Necesitas un menú especial?*:',
+                            [
+                                { label: 'NO', value: false },
+                                { label: 'SI (Disponible menus vegetariano y diabético, te llamaremos para confirmar el tipo y número)', value: true }
+                            ],
                             guestInfo)}
                         <br />
                         <br />
@@ -101,24 +97,23 @@ class RSVPForm extends React.Component {
      */
     validate() {
         function validateGuestDetail(info) {
-            if (!info.meal)
-                return "Por favor elige las restricciones alimentarias.";
+            if (!guestInfo.pax || isNaN(guestInfo.pax) || guestInfo.pax < 0)
+                return 'Utiliza un numero igual o mayor a 0 para tus acompañantes.';
+            if (!info.menu_especial)
+                return "Por favor elige si necesitas un menú especial.";
             return null;
         }
 
         const guestInfo = this.state.guestInfo;
 
-        if (!guestInfo.name || guestInfo.name.trim().empty)
+        if (!guestInfo.nombre || guestInfo.nombre.trim().empty)
             return 'Escribe tu nombre por favor';
 
-        if (!guestInfo.attendance)
-            return 'Nos acompañaras?';
+        if (!guestInfo.asistir)
+            return '¿Nos acompañaras?';
 
-        if (guestInfo.attendance === 'no')
+        if (guestInfo.asistir === 'false')
             return null;
-
-        if (!isEmail(guestInfo.email))
-            return 'Tu email no es correcto';
 
         const guestValidation = validateGuestDetail(guestInfo);
         if (guestValidation) {
@@ -148,7 +143,26 @@ class RSVPForm extends React.Component {
             </div>
         );
     }
+    renderNumberInput(name, label, stateObj) {
+        const self = this;
+        const value = stateObj[name];
 
+        function onChange(event) {
+            stateObj[name] = event.target.value;
+            self.setState(self.state);
+        }
+
+        return (
+            <div className="rsvp-section">
+                <label>{label}</label>
+                <input type="number"
+                    name={name}
+                    value={value}
+                    onChange={onChange} 
+                    min="0" max="15"/>
+            </div>
+        );
+    }
     /**
      * Renders a text input with a label and the specified set of options. Gets its state and
      * updates the specified @stateObj.
@@ -159,13 +173,13 @@ class RSVPForm extends React.Component {
      */
     renderRadioInput(name, label, options, stateObj) {
         const self = this;
-        const value = stateObj[name];
+        const value = stateObj[name] === 'true';;
 
         function onChange(event) {
             stateObj[name] = event.target.value;
             self.setState(self.state);
         }
-
+        
         return (
             <div className="rsvp-section">
                 <label>{label}</label>
@@ -189,9 +203,9 @@ class RSVPForm extends React.Component {
     /**
      * Retrieves the client for the web service API.
      */
-    getAPIClient() {
-        return new APIClient(document.location.protocol + '//' + document.location.host + '/api/rsvp');
-    }
+    // getAPIClient() {
+    //     return new APIClient(document.location.protocol + '//' + document.location.host + '/api/rsvp');
+    // }
 
     /**
      * Takes the collected wizard input across all forms and submits it to the database.
@@ -207,22 +221,32 @@ class RSVPForm extends React.Component {
         }
 
         var guestInfo = Object.assign({}, state.guestInfo);
-
-        // TODO: This is a hack, find a way to properly construct the request
-        const willAttend = guestInfo.attendance === 'yes';
-        delete guestInfo['attendance'];      
-
-        this.getAPIClient().rsvp(guestInfo, willAttend, function (errorMsg, successMsg) {
-            if (errorMsg) {
-                self.state.submitStatus = { isError: true, message: errorMsg };
-                self.setState(self.state);
-            } else {
-                self.state.submitStatus = {
-                    isError: false, message: 'Tu datos se enviaron correctamente. ¡Gracias!'
-                };
-                self.setState(self.state);
-            }
+        guestInfo.createdAt = Date.now();
+        console.log(guestInfo);
+        var addDoc = database.collection('rsvp').add(guestInfo).then(ref => {
+            console.log('Added document with ID: ', ref.id);
         });
+        // var addDoc = db.collection('cities').add({
+        //     name: 'Tokyo',
+        //     country: 'Japan'
+        // }).then(ref => {
+        //     console.log('Added document with ID: ', ref.id);
+        // });
+        // TODO: This is a hack, find a way to properly construct the request
+        // const willAttend = guestInfo.attendance === 'yes';
+        // delete guestInfo['attendance'];      
+
+        // this.getAPIClient().rsvp(guestInfo, willAttend, function (errorMsg, successMsg) {
+        //     if (errorMsg) {
+        //         self.state.submitStatus = { isError: true, message: errorMsg };
+        //         self.setState(self.state);
+        //     } else {
+        //         self.state.submitStatus = {
+        //             isError: false, message: 'Tu datos se enviaron correctamente. ¡Gracias!'
+        //         };
+        //         self.setState(self.state);
+        //     }
+        // });
     }
 }
 
