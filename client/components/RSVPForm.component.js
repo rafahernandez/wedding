@@ -109,9 +109,9 @@ class RSVPForm extends React.Component {
         if (!guestInfo.nombre || guestInfo.nombre.trim().empty)
             return 'Escribe tu nombre por favor';
 
-        if (!guestInfo.asistir)
-            return '¿Nos acompañaras?';
-
+        // if (!guestInfo.asistir)
+        //     return '¿Nos acompañaras?';
+        if (guestInfo.asistir == null) guestInfo.asistir = 'false';
         if (guestInfo.asistir === 'false')
             return null;
 
@@ -223,9 +223,9 @@ class RSVPForm extends React.Component {
         var guestInfo = Object.assign({}, state.guestInfo);
         guestInfo.createdAt = Date.now();
         console.log(guestInfo);
-        var addDoc = database.collection('rsvp').add(guestInfo).then(ref => {
-            console.log('Added document with ID: ', ref.id);
-        });
+        // var addDoc = database.collection('rsvp').add(guestInfo).then(ref => {
+        //     console.log('Added document with ID: ', ref.id);
+        // });
         // var addDoc = db.collection('cities').add({
         //     name: 'Tokyo',
         //     country: 'Japan'
