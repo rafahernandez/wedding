@@ -29,16 +29,18 @@ const websiteContent = (
                 { label: 'LA BODA', href: 'wedding' },
                 { label: 'RSVP', href: 'rsvp' },
                 { label: 'LOGÍSTICA', href: 'logistics' },
+                { label: 'DIRECTORIO', href: 'directorio' },
                 { label: 'QUE HACER', href: 'thingstodo' },
                 { label: 'REGALOS', href: 'gifts' }]}>
       </Menu>
     </Sticky>
 
-    <TopicContainer id="wedding" title="La BODA">
+    <TopicContainer id="wedding" title="La Boda">
       <div className="container">
         <div className="one-half column">
           <h2>CEREMONIA</h2>
-          <p>XX:X hrs, en la Parroquia Santa Maria de la Asuncion Acapetlahuaca (Ex convento Franciscano).</p>
+          <p>19:00 hrs, en la Parroquia de Santa Maria de la Asuncion Acapetlahuacan (Ex convento de San Francisco).</p>
+          <p>Circunvalación Tláloc #4 Col. Ricardo Treviño</p>
           <p>
             <a href="img/exconvento.jpg"><img className="location-image" src="img/exconvento.jpg" alt="Ex convento Fransiscano" /></a>
           </p>
@@ -52,7 +54,6 @@ const websiteContent = (
         </div>
         <div className="one-half column">
           <h2>RECEPCIÓN</h2>
-          <p>19:00 en Las palomas Atlixco</p>
           <p>
             <a href="img/palomas.jpg"><img className="location-image" src="img/palomas.jpg" alt="Las palomas atlixco" /></a>
           </p>
@@ -68,7 +69,7 @@ const websiteContent = (
 
       <hr />
 
-      <h2>EL DIA DE LA BODA</h2>
+      <h2>EL DÍA DE LA BODA</h2>
       <p>Te pedimos salir de tu hotel con tiempo suficiente, ya que como te comentamos, la iglesia está en el centro de Atlixco y 
       a veces el tráfico es un poco lento, en el directorio que está adjunto a la invitación (y disponible aquí) te pusimos opciones 
       que creemos necesarias para cualquier contratiempo, siéntete libre de usarlas haciendo referencia al evento.
@@ -99,7 +100,7 @@ const websiteContent = (
       </p>
       <hr />
 
-      <h2>COMO LLEGAR A ATLIXCO</h2>
+      <h2>CÓMO LLEGAR A ATLIXCO</h2>
       <p>Se ubica a 25 km de la ciudad de Puebla, capital del Estado y cuenta con dos importantes vías de acceso: la Carretera Federal 190 y 
       la moderna Autopista Vía Atlixcáyotl ($40, te ahorraras como 15-20 minutos).
       </p>
@@ -109,20 +110,63 @@ const websiteContent = (
       </p>
      
       <h2>HOSPEDAJE</h2>
-      <p>Once on the island in Hvar Town there are various accommodation options ranging from fancy hotels to renting an apartment
-         on <a href="https://goo.gl/uHTDYn">AirBnB</a>. The wedding will be in the Amfora Resort so any accommodation within walking
-         distance from there should be fine.
+      <p>
+      Contamos con convenio con el hotel <b>City Express Atlixco</b> <a href="https://goo.gl/maps/GS43Lq3Gws82">Ubicación</a>, 
+      a 15 minutos del centro de atlixco y de la iglesia, y a 7 minutos del jardín. La habitación incluye desayuno buffet. Los precios van 
+      de $ 1,264 a $1,496.
       </p>
-      <p>From our research we have found that hotels are fairly expensive and there are very nice AirBnB options available, so we highly
-         recommend doing that.
-      </p>
-      <p>For guests wishing to stay in a hotel, the <a href="http://www.suncanihvar.com/">Suncani Hvar</a> chain of hotels offers a 20%
-         discount using <SecretTooltip fnTooltip={() => { return 'WEDDKALOIANJOCELYN'; }}>this code</SecretTooltip> (please click on the
-         'this' in order to show it). The code must be entered in the <i>"Corporate/Promo Code ?"</i> section for the discounted prices to
-         apply and is valid for staying 5 days prior and 5 days after the wedding day. While this code indeed reduces the listed prices,
-         we have found that booking through <a href="https://goo.gl/2xzaIg">Expedia</a> or <a href="https://goo.gl/z6zsZk">Hotels.com</a>&nbsp;
-         shows about the same prices or in some cases even cheaper, so please bear that in mind as well.
-      </p>
+      <br/>
+      Para obtener esta tarifa la reservación se debe hacer vía telefónica, haciendo mención a que reservan para la boda de Aurora y Rafael,
+      con los datos que encontraran a continuación
+      <br/>
+      Telefono: <a href="tel:0447711284064">044 771 128 4064</a><br/>
+            Deposito a: BV Atlixco Express SA de CV<br/>
+            Banco: Santander<br />
+            Num de cuenta: <b>65-50660492-5</b><br/>
+            CLABE: <b>014654655066049258</b><br/>
+      Enviar comprobante a: Adela León al celular anterior a y mencionar a nombre de quien queda la reservación.
+      
+    </TopicContainer>
+
+    <TopicContainer id="directorio" title="Directorio">
+      <h2>Hoteles</h2>
+      <p><b>City Express Atlixco</b></p>
+      Carr. Fed. Puebla-Atlixco Km 27.5 Centro Atlixco, Pue.<br/>
+        <a href="tel:012444469200">01 244 446 9200</a><br />
+        Contacto: <b>Adela León</b>
+      <br /><br />
+      <h2>Maquillistas y peinadoras</h2>
+      <p><b>Fernanda Espinoza</b> (A domicilio)<br /></p>
+        <a href="tel:5510535988">551 053 5988</a><br />
+        En Facebook:  <a href="https://www.facebook.com/fernanda.espinozarivera">Fernanda Espinoza</a>
+      
+      <p><b>Jamileth Vázquez</b> (A domicilio)<br /></p>
+        <a href="tel:2221352113">222 135 2113</a><br />
+        En Facebook:  <a href="https://www.facebook.com/NAIABEAUTYSTUDIO/">NAIA</a>
+      <br /><br />
+
+      <h2>Peluquería</h2>
+      <p>Peluquería y barbería <b>Paris</b><br /></p>
+      Calle 2 Ote. 3, Centro, 74200 Atlixco, Pue. (Frente al parque)<br/>
+      Lunes a Sábado: 10:00 – 19:30
+      <a href="https://goo.gl/maps/JVRwHzkptdp">Ubicación</a>
+      <br /><br />
+      
+      <h2>Tintorería</h2>
+      <p><b>Quick & Clean</b><br /></p>
+        Av Hidalgo, Centro, 74200 Atlixco, Pue.<br />
+        <a href="https://goo.gl/maps/NGcNidKZdXC2">Ubicación</a>
+      <br /><br/>
+      
+      <h2>Uñas</h2>
+      <p><b>Fer Medina</b> (A domicilio)<br /></p>
+        <a href="tel:2227313731">222 731 3731</a><br />
+      <br /><br />
+
+      <h2>Niñera</h2>
+      <p><b>Estefanía Bustos Díaz</b><br /></p>
+        <a href="tel:5540177147">554 017 7147</a><br />
+        En Facebook:  <a href="https://www.facebook.com/estefania.bustosdiaz">Estefania Bustos Díaz</a>
     </TopicContainer>
 
     <TopicContainer id="thingstodo" title="Cosas que hacer en Atlixco">
@@ -189,7 +233,7 @@ const websiteContent = (
       </p>
       <p>
       SEARS   <b>11113379</b><br/>
-      LIVERPOOL 
+      LIVERPOOL <b>45531408</b>
       </p>
       <p>Esto tomando en cuenta que así como ustedes, viajamos para la boda y nos será un tanto difícil transportar artículos grandes.</p>
       <p>¡Estamos eternamente agradecidos!</p>

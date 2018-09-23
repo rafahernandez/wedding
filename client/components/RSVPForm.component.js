@@ -34,6 +34,7 @@ class RSVPForm extends React.Component {
             <div id={this.props.id} className="wizard-form">
                 <p>Para darte el trato que nos gustaría te pedimos confirmes tu asistencia antes del 15 de diciembre de 2018. 
                 Puedes hacerlo aquí, vía telefónica o confirmar al recibir la llamada de cualquiera de estos números 
+                2221141534  y 2222399547
                 </p>
                 <br />
 
@@ -48,7 +49,7 @@ class RSVPForm extends React.Component {
                     'asistir',
                     '¿Asistirás?*:',
                     [
-                        { label: 'SI VOY A ATENDER', value: true },
+                        { label: 'SI VOY A ASISTIR', value: true },
                         { label: 'NO PODRÉ ACOMPAÑARLOS', value: false }
                     ],
                     guestInfo)

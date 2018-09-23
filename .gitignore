@@ -3,3 +3,5 @@ bin/
 node_modules/
 static/js/bundle.js
 aurora-y-rafael-firebase-adminsdk-0adtq-c9c94a8de1.json
+.firebase/
+.idea/
